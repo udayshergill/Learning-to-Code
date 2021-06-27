@@ -7,6 +7,6 @@ time.sleep(0.5)
 while numberamount>0:
     newnumber = int(input("What is the number you want to add\n"))
     time.sleep(0.1)
-    numberint = numberint + newnumber
-    numberamount = numberamount -1
+    numberint += newnumber
+    numberamount -= 1
 print("Your number is " + str(numberint))
