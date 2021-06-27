@@ -1,6 +1,5 @@
 import time
-numberint = 0
-int(numberint)
+numberint = int(0)
 print("Hello I will be adding your numbers\n")
 time.sleep(0.5)
 numberamount = int(input("How many numbers are you adding?\n"))
