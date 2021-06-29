@@ -4,7 +4,7 @@ def stringspliter(sentence):
     print(sentence)
     words = sentence.split(" ")
     word_amount = len(words)
-    print("Your sentence has " + len + " amount of words")
+    print("Your sentence has " + str(word_amount) + " words")
     while holder != word_amount:
         print(words[holder])
         holder += 1
