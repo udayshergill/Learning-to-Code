@@ -28,14 +28,14 @@ def poi(m1,m2,b1,b2):
     print("Your point of interection will be {}, {}\n" .format(x, y))
     time.sleep(5)
 
-eq1 = (input("Please give the first equation is y=mx+b format\n"))
+eq1 = (input("Please give the first equation in y=mx+b format\n"))
 m1start = eq1.find("=") + len("=")
 m1end = eq1.find("x")
 m1 = int(eq1[m1start:m1end])
 holder1 = (eq1.find("+")) + 1
 b1 = int(eq1[holder1:len(eq1)])
 
-eq2 = (input("Please give the second equation is y=mx+b format\n"))
+eq2 = (input("Please give the second equation in y=mx+b format\n"))
 m2start = eq2.find("=") + len("=")
 m2end = eq2.find("x")
 m2 = int(eq2[m2start:m2end])
