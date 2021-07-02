@@ -1,4 +1,5 @@
 def poi(m1,m2,b1,b2):
+    import time
     m = m2 - m1
     b = b1 - b2
     if m == 0:
@@ -7,17 +8,25 @@ def poi(m1,m2,b1,b2):
     else:
         x = b / m
     print("Find the POI with theses steps\n")
+    time.sleep(1.5)
     print("First combine both the formulas by having y1 = y2\n")
+    time.sleep(1.5)
     print("It should look like this {} + {}x = {}x + {}\n" .format(b2, m2, m1, b1))
+    time.sleep(1.5)
     print("Isolate for x by rearragning the formula into {}x - {}x = {} - {}\n" .format(m2,m1,b1,b2))
+    time.sleep(1.5)
     print("Simplify the values into {}x = {}\n" .format(m,b))
+    time.sleep(1.5)
     print("divide the {} by {} to get x = {}\n" .format(b,m,x))
+    time.sleep(1.5)
     print("Now take the {} and sub it in the orginal equation as x\n" .format(x))
-    print("Solve for y in the equation y = {}({}) + {}" .format(m1,x,b1))
+    time.sleep(1.5)
+    print("Solve for y in the equation y = {}({}) + {}\n" .format(m1,x,b1))
+    time.sleep(1.5)
     y = m1 * x
-    print(y)
     y += b1
-    print("Your point of interection will be {}, {}" .format(x, y))
+    print("Your point of interection will be {}, {}\n" .format(x, y))
+    time.sleep(5)
 
 eq1 = (input("Please give the first equation is y=mx+b format\n"))
 m1start = eq1.find("=") + len("=")
@@ -34,3 +43,5 @@ holder2 = (eq2.find("+")) + 1
 b2 = int(eq2[holder2:len(eq2)])
 
 poi(m1,m2, b1, b2)
+
+input("Press Enter to Close\n")
