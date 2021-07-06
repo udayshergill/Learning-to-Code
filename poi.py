@@ -32,14 +32,22 @@ eq1 = (input("Please give the first equation in y=mx+b format\n"))
 m1start = eq1.find("=") + len("=")
 m1end = eq1.find("x")
 m1 = int(eq1[m1start:m1end])
-holder1 = (eq1.find("+")) + 1
+finder1 = eq1.find("+")
+if finder1 > 0:
+    holder1 = (eq1.find("+")) + 1
+else:
+    holder1 = (eq1.find("-"))
 b1 = int(eq1[holder1:len(eq1)])
 
 eq2 = (input("Please give the second equation in y=mx+b format\n"))
 m2start = eq2.find("=") + len("=")
 m2end = eq2.find("x")
 m2 = int(eq2[m2start:m2end])
-holder2 = (eq2.find("+")) + 1
+finder2 = eq2.find("+")
+if finder2 > 0:
+    holder2 = (eq2.find("+")) + 1
+else:
+    holder2 = (eq2.find("-")) 
 b2 = int(eq2[holder2:len(eq2)])
 
 poi(m1,m2, b1, b2)
